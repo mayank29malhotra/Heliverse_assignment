@@ -1,5 +1,4 @@
 import '../models/UserModel.dart';
-import 'package:flutter/material.dart';
 
 List<User> selectedUsers = [];
 const String searchByNameLabel = 'Search by Name';

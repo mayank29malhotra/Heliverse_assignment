@@ -69,6 +69,8 @@ class UserListProvider with ChangeNotifier {
   }
 
   void addToTeam(User user, BuildContext context) {
+    selectedUsers.add(user);
+    user.available = false;
     List<User> teamMembers = selectedUsers;
     // Check if users from all unique domains are added
     int totalUniqueDomains = users.map((user) => user.domain).toSet().length;
